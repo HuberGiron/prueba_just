@@ -1,11 +1,12 @@
-title: prueba
-description: prueba just the docs
+title: "prueba"
+description: "prueba just the docs"
 theme: just-the-docs
 
-url: https://HuberGiron.github.io/just
+url: "https://HuberGiron.github.io"
+baseurl: "/just"
 
-aux_links: # remove if you don't want this link to appear on your pages
-  Template Repository: https://github.com/HuberGiron/prueba_just/
+aux_links:
+  Template Repository: "https://github.com/HuberGiron/prueba_just/"
   
 permalink: pretty
 search_enabled: true
@@ -14,7 +15,6 @@ search_enabled: true
 # plugins:
 #   - jekyll-mermaid
 
-# Orden de navegación principal
 nav_external_links:
   - title: "Volver al sitio principal"
     url: "/"
