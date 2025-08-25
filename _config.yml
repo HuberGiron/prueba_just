@@ -8,7 +8,4 @@ baseurl: "/prueba_just"
 permalink: pretty
 search_enabled: true
 
-just_the_docs:
-  collections:
-    pages:
-      nav_fold: false
+
