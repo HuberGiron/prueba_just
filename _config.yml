@@ -2,18 +2,14 @@ title: "prueba"
 description: "prueba just the docs"
 theme: just-the-docs
 
-url: "https://HuberGiron.github.io"
-baseurl: "/just"
+url: "https://hubergiron.github.io"
+baseurl: "/prueba_just"
 
-aux_links:
-  Template Repository: "https://github.com/HuberGiron/prueba_just/"
-  
 permalink: pretty
 search_enabled: true
 
-# (Opcional) Mermaid para diagramas
-# plugins:
-#   - jekyll-mermaid
+aux_links:
+  Template Repository: "https://github.com/HuberGiron/prueba_just/"
 
 nav_external_links:
   - title: "Volver al sitio principal"
