@@ -1,3 +1,0 @@
-```python
-print('Hola mundo')
-```

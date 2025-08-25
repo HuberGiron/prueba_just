@@ -7,5 +7,5 @@ nav_order: 1
 # Documentación (demo)
 Bienvenido. Explora el **Muestrario** o entra a **Guías**.
 
-- 👉 **[Muestrario](./muestrario)**
-- 👉 **[Guías](./guias)**
+- 👉 [Muestrario]({{ "/muestrario" | relative_url }})
+- 👉 [Guías]({{ "/guias" | relative_url }})

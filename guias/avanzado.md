@@ -1,3 +1,0 @@
-# Avanzado
-
-Configuraciones avanzadas...
