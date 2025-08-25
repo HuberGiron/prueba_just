@@ -9,3 +9,6 @@ nav_order: 3
 
 YouTube incrustado:
 <iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID" allowfullscreen></iframe>
+
+MP4 incrustado:
+<video width="640" height="360" src="{{ "/assets/video/Robot.mp4" | relative_url }}" type="video/mp4"></video>
