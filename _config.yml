@@ -3,7 +3,7 @@ description: "prueba just the docs"
 theme: just-the-docs
 
 url: "https://hubergiron.github.io"
-baseurl: "/prueba_just"
+baseurl: "https://hubergiron.github.io/prueba_just"
 
 permalink: pretty
 search_enabled: true
