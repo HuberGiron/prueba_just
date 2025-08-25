@@ -7,3 +7,14 @@ url: https://HuberGiron.github.io/just
 aux_links: # remove if you don't want this link to appear on your pages
   Template Repository: https://github.com/HuberGiron/prueba_just/
   
+permalink: pretty
+search_enabled: true
+
+# (Opcional) Mermaid para diagramas
+# plugins:
+#   - jekyll-mermaid
+
+# Orden de navegación principal
+nav_external_links:
+  - title: "Volver al sitio principal"
+    url: "/"

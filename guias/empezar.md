@@ -1,0 +1,3 @@
+# Empezar
+
+Pasos básicos...
