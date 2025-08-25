@@ -1,7 +1,8 @@
 ---
 layout: default
 title: Avanzado
-nav_order: 9
+parent: Guías
+nav_order: 2
 ---
 
 # Avanzado

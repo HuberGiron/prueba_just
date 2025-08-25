@@ -1,8 +1,10 @@
 ---
 layout: default
 title: Imágenes
-nav_order: 3
+parent: Muestrario
+nav_order: 1
 ---
+
 
 # Imágenes
 

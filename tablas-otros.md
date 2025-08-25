@@ -1,7 +1,8 @@
 ---
 layout: default
 title: Tablas y otros
-nav_order: 6
+parent: Muestrario
+nav_order: 4
 ---
 
 # Tablas y otros

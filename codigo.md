@@ -1,7 +1,8 @@
 ---
 layout: default
 title: Código
-nav_order: 4
+parent: Muestrario
+nav_order: 2
 ---
 
 # Código

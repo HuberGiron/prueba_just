@@ -1,7 +1,8 @@
 ---
 layout: default
 title: Videos
-nav_order: 5
+parent: Muestrario
+nav_order: 3
 ---
 
 # Videos

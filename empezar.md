@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Empezar
+parent: Guías
 nav_order: 8
 ---
 

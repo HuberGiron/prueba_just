@@ -1,7 +1,8 @@
 ---
 layout: default
 title: Guías
-nav_order: 7
+has_children: true
+nav_order: 3
 ---
 
 # Guías
