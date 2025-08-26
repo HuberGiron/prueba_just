@@ -232,3 +232,6 @@ a:focus { outline: 2px solid #FFD5DE; outline-offset: 2px; }
 .side-bar .nav-list > .nav-list-item + .nav-list-item {
   margin-top: .15rem;
 }
+
+/* Oculta el footer del tema en todas las vistas */
+footer.site-footer { display: none !important; }
