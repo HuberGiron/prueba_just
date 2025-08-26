@@ -131,3 +131,29 @@ a:focus { outline: 2px solid #FFD5DE; outline-offset: 2px; }
     text-decoration-color: rgba(176,0,40,0.7);
   }
 }
+
+/* === MÓVIL: footer legible sobre fondo blanco === */
+@media (max-width: 66rem) {
+  /* Fuerza color base del texto del footer */
+  .site-footer {
+    background: #ffffff !important;
+    color: #495057 !important;  /* gris legible */
+    opacity: 1 !important;      /* por si el tema aplica opacidad */
+  }
+
+  /* Asegura que TODO el contenido del footer sea gris por defecto */
+  .site-footer * {
+    color: #495057 !important;
+  }
+
+  /* Luego, sobrescribe SOLO los enlaces del footer a rojo IBERO */
+  .site-footer a,
+  .site-footer a:visited {
+    color: #E00034 !important;
+    text-decoration-color: rgba(224, 0, 52, 0.5);
+  }
+  .site-footer a:hover {
+    color: #b00028 !important;
+    text-decoration-color: rgba(176, 0, 40, 0.7);
+  }
+}
