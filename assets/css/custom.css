@@ -2,52 +2,76 @@
 .site-header {
   background-color: #E00034 !important; /* Rojo IBERO */
 }
-
 .site-title,
 .site-nav a {
   color: #ffffff !important;
 }
 
-/* === Links generales === */
-a {
-  color: #E00034;
+/* === Links en el contenido === */
+:root {
+  --link-color: #E00034;
 }
-a:hover {
-  color: #b00028;
+a { color: var(--link-color); }
+a:hover { color: #b00028; }
+
+/* === Sidebar (barra lateral) === */
+/* Opción A: barra lateral roja */
+.side-bar,
+.side-bar .site-nav,
+.side-bar .nav-list {
+  background-color: #E00034 !important;
 }
 
-/* === Sidebar (menú lateral) === */
-.side-bar {
-  background-color: #E00034 !important; /* Barra lateral roja */
+/* Opción B: barra lateral gris (activa esta si prefieres) */
+/*
+.side-bar,
+.side-bar .site-nav,
+.side-bar .nav-list {
+  background-color: #f4f4f4 !important;
+}
+*/
+
+/* Título arriba en el sidebar */
+.side-bar .site-title {
+  color: #ffffff !important;
+  font-weight: 700;
+  font-size: 1.4rem;
 }
 
-/* Links dentro del sidebar */
-.nav-list .nav-list-item .nav-list-link {
-  color: #ffffff !important; /* Texto blanco */
+/* Texto de links en el menú */
+.nav-list .nav-list-link {
+  color: #ffffff !important;
+  background: none !important;   /* quitar gradiente */
 }
-
-/* Activo */
-.nav-list .nav-list-item .nav-list-link.active {
-  font-weight: bold;
-  color: #FFD5DE !important; /* Blanco rosado de contraste */
-}
-
-/* Hover en sidebar */
-.nav-list .nav-list-item .nav-list-link:hover {
+.nav-list .nav-list-link.active {
   color: #FFD5DE !important;
+  font-weight: bold;
+  background: none !important;   /* quitar gradiente */
+}
+.nav-list .nav-list-link:hover {
+  color: #FFD5DE !important;
+  background: none !important;   /* quitar gradiente */
 }
 
-/* === Flechas desplegables === */
-.nav-list-expander {
+/* Flechas */
+.nav-list-expander,
+.nav-list-expander svg {
   color: #ffffff !important;
   stroke: #ffffff !important;
 }
-.nav-list-expander:hover {
+.nav-list-expander:hover,
+.nav-list-expander:hover svg {
   color: #FFD5DE !important;
   stroke: #FFD5DE !important;
 }
 
-/* === Body (contenido principal) === */
+/* Footer de la barra lateral (texto "This site uses Just the Docs…") */
+.side-bar .site-footer {
+  color: #f0f0f0 !important;   /* gris claro sobre rojo */
+  font-size: 0.75rem;
+}
+
+/* === Contenido === */
 .page-content {
   background-color: #ffffff;
   color: #333333;
