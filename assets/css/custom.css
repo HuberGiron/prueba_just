@@ -138,7 +138,7 @@ a:focus { outline: 2px solid #FFD5DE; outline-offset: 2px; }
 }
 
 /* Móvil / pantalla chica (sidebar colapsa; fondo claro) */
-@media (max-width: 66rem) {
+@media (max-width: 22rem) {
   /* Fuerza colores legibles sobre fondo blanco */
   .site-footer {
     background: #ffffff !important;
