@@ -2,7 +2,7 @@
 layout: default
 title: Empezar
 parent: Guías
-nav_order: 8
+nav_order: 1
 ---
 
 # Empezar
