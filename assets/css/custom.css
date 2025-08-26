@@ -1,0 +1,35 @@
+/* Color de fondo del header */
+.site-header {
+  background-color: #E00034 !important; /* Rojo Ibero */
+}
+
+/* Color del texto en header */
+.site-title, .site-nav a {
+  color: #ffffff !important;
+}
+
+/* Color de los links */
+a {
+  color: #E00034;
+}
+a:hover {
+  color: #b00028;
+}
+
+/* Sidebar (menú lateral) */
+.side-bar {
+  background-color: #f4f4f4;
+}
+.nav-list .nav-list-item .nav-list-link {
+  color: #333333;
+}
+.nav-list .nav-list-item .nav-list-link.active {
+  font-weight: bold;
+  color: #E00034;
+}
+
+/* Body */
+.page-content {
+  background-color: #ffffff;
+  color: #333333;
+}

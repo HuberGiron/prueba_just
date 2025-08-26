@@ -8,4 +8,8 @@ baseurl: "/prueba_just"
 permalink: pretty
 search_enabled: true
 
-
+just_the_docs:
+  # ...
+  # incluir CSS adicional
+  custom_css:
+    - "/assets/css/custom.css"
