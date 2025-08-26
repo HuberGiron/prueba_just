@@ -234,4 +234,37 @@ a:focus { outline: 2px solid #FFD5DE; outline-offset: 2px; }
 }
 
 /* Oculta el footer del tema en todas las vistas */
-footer.site-footer { display: none !important; }
+/*footer.site-footer { display: none !important; } */
+
+/* ===== Footer propio (siempre visible) ===== */
+.custom-footer{
+  margin-top: 3rem;
+  padding-top: 1rem;
+  border-top: 1px solid #e5e7eb;     /* separador sutil */
+  color: #6B7280;                     /* gris medio */
+  font-size: 0.95rem;
+  background: transparent;
+}
+
+.custom-footer a,
+.custom-footer a:visited{
+  color: #E00034;                     /* rojo IBERO */
+  text-decoration-color: rgba(224,0,52,.45);
+}
+
+.custom-footer a:hover{
+  color: #b00028;
+  text-decoration-color: rgba(176,0,40,.65);
+}
+
+.custom-footer__modified strong{
+  color: #4B5563;                     /* gris un poco más oscuro para el label */
+}
+
+/* Asegura legibilidad en móvil (fondo claro) */
+@media (max-width: 66rem){
+  .custom-footer{
+    background: #ffffff;
+    color: #6B7280;
+  }
+}
