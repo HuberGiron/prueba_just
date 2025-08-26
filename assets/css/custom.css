@@ -29,17 +29,17 @@ a:focus { outline: 2px solid #FFD5DE; outline-offset: 2px; }
 .nav-list .nav-list-link:hover {
   background: none !important;            /* quita el gradiente lila */
 }
-.nav-list .nav-list-link.active { 
-  color: #FFD5DE !important; 
+.nav-list .nav-list-link.active {
+  color: #FFD5DE !important;
   font-weight: 700;
   background-color: rgba(255,255,255,0.12) !important;
 }
-.nav-list .nav-list-link:hover { 
-  color: #FFD5DE !important; 
+.nav-list .nav-list-link:hover {
+  color: #FFD5DE !important;
   background-color: rgba(255,255,255,0.08) !important;
 }
 
-/* Jerarquía (más sangría a hijos, opcional) */
+/* (antiguo) Jerarquía simple — será mejorado al final */
 .nav-list .nav-list-item .nav-list .nav-list-link { padding-left: 1.25rem; }
 
 /* Flechas (chevrons) del menú */
@@ -76,8 +76,8 @@ a:focus { outline: 2px solid #FFD5DE; outline-offset: 2px; }
 .site-header .menu-icon,
 .site-header .menu-button {
   color: #ffffff !important;
-  fill: #ffffff !important;
-  stroke: #ffffff !important;
+  fill:  #ffffff !important;
+  stroke:#ffffff !important;
 }
 #menu-toggle:focus + label,
 .menu-button:focus { outline: 2px solid #FFD5DE; outline-offset: 2px; }
@@ -89,7 +89,7 @@ a:focus { outline: 2px solid #FFD5DE; outline-offset: 2px; }
 /* === CONTENIDO === */
 .page-content { background-color: #ffffff; color: #333333; }
 
-/* ===== 1) Header: iconos/botón del menú en blanco ===== */
+/* ===== 1) Header: iconos/botón del menú en blanco (forzado) ===== */
 .site-header svg,
 .site-header .menu-icon,
 .site-header .menu-button,
@@ -137,11 +137,11 @@ a:focus { outline: 2px solid #FFD5DE; outline-offset: 2px; }
   }
 }
 
-/* ==== FIX DEFINITIVO: footer legible en móvil (fondo claro) ==== */
+/* Móvil / pantalla chica (footer global sobre fondo claro) */
 @media (max-width: 66rem) {
   footer.site-footer {
     background: #ffffff !important;   /* fondo claro */
-    opacity: 1 !important;            /* por si había opacidad */
+    opacity: 1 !important;
   }
 
   /* Texto base del footer en gris legible */
@@ -149,8 +149,8 @@ a:focus { outline: 2px solid #FFD5DE; outline-offset: 2px; }
   footer.site-footer p,
   footer.site-footer span,
   footer.site-footer *:not(a) {
-    color: #495057 !important;        /* gris */
-    text-shadow: none !important;      /* sin sombras raras */
+    color: #495057 !important;
+    text-shadow: none !important;
   }
 
   /* Enlaces del footer en rojo Ibero */
@@ -163,4 +163,72 @@ a:focus { outline: 2px solid #FFD5DE; outline-offset: 2px; }
     color: #b00028 !important;
     text-decoration-color: rgba(176, 0, 40, 0.7) !important;
   }
+}
+
+/* ====== Jerarquía del menú lateral (mejor diferenciación) ====== */
+
+/* Nivel 1 (padres) */
+.side-bar .nav-list > .nav-list-item > .nav-list-link {
+  font-weight: 600;
+  letter-spacing: .2px;
+  font-size: 1.05rem;
+  padding-left: 1rem;
+  background: none !important;
+}
+
+/* Nivel 2 (hijos) */
+.side-bar .nav-list .nav-list-item .nav-list .nav-list-link {
+  font-weight: 400;
+  font-size: 0.95rem;
+  padding-left: 1.75rem;
+  position: relative;
+  background: rgba(255,255,255,0.05); /* leve contraste */
+  border-left: 3px solid transparent;
+}
+
+/* Nivel 3 (nietos) */
+.side-bar .nav-list .nav-list-item .nav-list .nav-list-item .nav-list .nav-list-link {
+  padding-left: 2.25rem;
+  font-size: 0.9rem;
+  background: rgba(255,255,255,0.03);
+}
+
+/* Punto visual (bullet) para hijos */
+.side-bar .nav-list .nav-list-item .nav-list .nav-list-link::before {
+  content: "•";
+  position: absolute;
+  left: 1.3rem;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: .6;
+  font-size: .8rem;
+}
+
+/* Hover y Activo más notorios */
+.side-bar .nav-list .nav-list-link:hover {
+  color: #FFD5DE !important;
+  background: rgba(255,255,255,0.10) !important;
+}
+.side-bar .nav-list .nav-list-link.active {
+  color: #ffffff !important;
+  font-weight: 700;
+  background: rgba(255,255,255,0.20) !important;
+}
+
+/* Barra izquierda solo para hijos (nivel 2+) en hover/activo */
+.side-bar .nav-list .nav-list-item .nav-list .nav-list-link:hover,
+.side-bar .nav-list .nav-list-item .nav-list .nav-list-link.active {
+  border-left-color: #FFD5DE;
+}
+
+/* Mejor foco accesible */
+.side-bar .nav-list .nav-list-link:focus {
+  outline: 2px solid #FFD5DE !important;
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+/* Separación sutil entre secciones de nivel 1 */
+.side-bar .nav-list > .nav-list-item + .nav-list-item {
+  margin-top: .15rem;
 }
