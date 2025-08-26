@@ -88,3 +88,46 @@ a:focus { outline: 2px solid #FFD5DE; outline-offset: 2px; }
 
 /* === CONTENIDO === */
 .page-content { background-color: #ffffff; color: #333333; }
+
+/* ===== 1) Header: iconos/botón del menú en blanco ===== */
+.site-header svg,
+.site-header .menu-icon,
+.site-header .menu-button,
+.site-header .menu-icon svg {
+  color: #ffffff !important;
+  fill:  #ffffff !important;
+  stroke:#ffffff !important;
+}
+
+/* Estado abierto del menú (checkbox marcado) */
+#menu-toggle:checked + label,
+#menu-toggle:checked + label .menu-icon,
+#menu-toggle:checked + label .menu-icon svg {
+  color: #ffffff !important;
+  fill:  #ffffff !important;
+  stroke:#ffffff !important;
+}
+
+/* Fallback por si el tema usa otros selectores para el toggle */
+.site-header .nav-toggle,
+.site-header .nav-toggle .icon,
+.site-header .nav-trigger,
+.site-header .nav-trigger .icon {
+  color: #ffffff !important;
+  fill:  #ffffff !important;
+  stroke:#ffffff !important;
+}
+
+/* ===== 2) Móvil: footer legible cuando el fondo es claro ===== */
+@media (max-width: 66rem) {
+  .site-footer { color:#666666 !important; }
+  .site-footer a,
+  .site-footer a:visited {
+    color:#E00034 !important;
+    text-decoration-color: rgba(224,0,52,0.5);
+  }
+  .site-footer a:hover {
+    color:#b00028 !important;
+    text-decoration-color: rgba(176,0,40,0.7);
+  }
+}
