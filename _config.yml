@@ -13,3 +13,4 @@ just_the_docs:
   # incluir CSS adicional
   custom_css:
     - "assets/css/custom.css"
+  footer_content: ""
