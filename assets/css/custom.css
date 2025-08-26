@@ -118,42 +118,45 @@ a:focus { outline: 2px solid #FFD5DE; outline-offset: 2px; }
   stroke:#ffffff !important;
 }
 
-/* ===== 2) Móvil: footer legible cuando el fondo es claro ===== */
-@media (max-width: 66rem) {
-  .site-footer { color:#666666 !important; }
-  .site-footer a,
-  .site-footer a:visited {
-    color:#E00034 !important;
-    text-decoration-color: rgba(224,0,52,0.5);
+/* ===== FOOTER: estilos separados por breakpoint ===== */
+
+/* Desktop (sidebar visible, fondo rojo) */
+@media (min-width: 66rem) {
+  .side-bar .site-footer {
+    color: #ffffff !important;
+    opacity: 1 !important;
   }
-  .site-footer a:hover {
-    color:#b00028 !important;
-    text-decoration-color: rgba(176,0,40,0.7);
+  .side-bar .site-footer a,
+  .side-bar .site-footer a:visited {
+    color: #FFD5DE !important;
+    text-decoration-color: rgba(255, 213, 222, 0.6) !important;
+  }
+  .side-bar .site-footer a:hover {
+    color: #ffffff !important;
+    text-decoration-color: #ffffff !important;
   }
 }
 
-/* === MÓVIL: footer legible sobre fondo blanco === */
+/* Móvil / pantalla chica (sidebar colapsa; fondo claro) */
 @media (max-width: 66rem) {
-  /* Fuerza color base del texto del footer */
+  /* Fuerza colores legibles sobre fondo blanco */
   .site-footer {
     background: #ffffff !important;
-    color: #495057 !important;  /* gris legible */
-    opacity: 1 !important;      /* por si el tema aplica opacidad */
+    color: #495057 !important;          /* texto gris */
+    opacity: 1 !important;
   }
-
-  /* Asegura que TODO el contenido del footer sea gris por defecto */
-  .site-footer * {
+  /* Aumenta especificidad para vencer reglas previas */
+  body .site-footer,
+  body .site-footer * {
     color: #495057 !important;
   }
-
-  /* Luego, sobrescribe SOLO los enlaces del footer a rojo IBERO */
-  .site-footer a,
-  .site-footer a:visited {
-    color: #E00034 !important;
-    text-decoration-color: rgba(224, 0, 52, 0.5);
+  body .site-footer a,
+  body .site-footer a:visited {
+    color: #E00034 !important;          /* link rojo Ibero */
+    text-decoration-color: rgba(224, 0, 52, 0.5) !important;
   }
-  .site-footer a:hover {
+  body .site-footer a:hover {
     color: #b00028 !important;
-    text-decoration-color: rgba(176, 0, 40, 0.7);
+    text-decoration-color: rgba(176, 0, 40, 0.7) !important;
   }
 }
