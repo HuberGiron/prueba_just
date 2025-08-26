@@ -1,14 +1,14 @@
-/* Color de fondo del header */
+/* === Header (barra superior) === */
 .site-header {
-  background-color: #E00034 !important; /* Rojo Ibero */
+  background-color: #E00034 !important; /* Rojo IBERO */
 }
 
-/* Color del texto en header */
-.site-title, .site-nav a {
+.site-title,
+.site-nav a {
   color: #ffffff !important;
 }
 
-/* Color de los links */
+/* === Links generales === */
 a {
   color: #E00034;
 }
@@ -16,19 +16,38 @@ a:hover {
   color: #b00028;
 }
 
-/* Sidebar (menú lateral) */
+/* === Sidebar (menú lateral) === */
 .side-bar {
-  background-color: #f4f4f4;
-}
-.nav-list .nav-list-item .nav-list-link {
-  color: #333333;
-}
-.nav-list .nav-list-item .nav-list-link.active {
-  font-weight: bold;
-  color: #E00034;
+  background-color: #E00034 !important; /* Barra lateral roja */
 }
 
-/* Body */
+/* Links dentro del sidebar */
+.nav-list .nav-list-item .nav-list-link {
+  color: #ffffff !important; /* Texto blanco */
+}
+
+/* Activo */
+.nav-list .nav-list-item .nav-list-link.active {
+  font-weight: bold;
+  color: #FFD5DE !important; /* Blanco rosado de contraste */
+}
+
+/* Hover en sidebar */
+.nav-list .nav-list-item .nav-list-link:hover {
+  color: #FFD5DE !important;
+}
+
+/* === Flechas desplegables === */
+.nav-list-expander {
+  color: #ffffff !important;
+  stroke: #ffffff !important;
+}
+.nav-list-expander:hover {
+  color: #FFD5DE !important;
+  stroke: #FFD5DE !important;
+}
+
+/* === Body (contenido principal) === */
 .page-content {
   background-color: #ffffff;
   color: #333333;
