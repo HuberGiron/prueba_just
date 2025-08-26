@@ -137,25 +137,29 @@ a:focus { outline: 2px solid #FFD5DE; outline-offset: 2px; }
   }
 }
 
-/* Móvil / pantalla chica (sidebar colapsa; fondo claro) */
-@media (max-width: 22rem) {
-  /* Fuerza colores legibles sobre fondo blanco */
-  .site-footer {
-    background: #ffffff !important;
-    color: #495057 !important;          /* texto gris */
-    opacity: 1 !important;
+/* ==== FIX DEFINITIVO: footer legible en móvil (fondo claro) ==== */
+@media (max-width: 66rem) {
+  footer.site-footer {
+    background: #ffffff !important;   /* fondo claro */
+    opacity: 1 !important;            /* por si había opacidad */
   }
-  /* Aumenta especificidad para vencer reglas previas */
-  body .site-footer,
-  body .site-footer * {
-    color: #495057 !important;
+
+  /* Texto base del footer en gris legible */
+  footer.site-footer,
+  footer.site-footer p,
+  footer.site-footer span,
+  footer.site-footer *:not(a) {
+    color: #495057 !important;        /* gris */
+    text-shadow: none !important;      /* sin sombras raras */
   }
-  body .site-footer a,
-  body .site-footer a:visited {
-    color: #E00034 !important;          /* link rojo Ibero */
+
+  /* Enlaces del footer en rojo Ibero */
+  footer.site-footer a,
+  footer.site-footer a:visited {
+    color: #E00034 !important;
     text-decoration-color: rgba(224, 0, 52, 0.5) !important;
   }
-  body .site-footer a:hover {
+  footer.site-footer a:hover {
     color: #b00028 !important;
     text-decoration-color: rgba(176, 0, 40, 0.7) !important;
   }
