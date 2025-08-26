@@ -12,4 +12,4 @@ just_the_docs:
   # ...
   # incluir CSS adicional
   custom_css:
-    - "/assets/css/custom.css"
+    - "assets/css/custom.css"
